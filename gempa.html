@@ -1,0 +1,404 @@
+<html>
+	<head>
+		<title>Peringatan Dini Gempa dan Tsunami</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Peringatan Gempa Bumi dan Tsunami">
+		<meta name="keywords" content="Meteorlogi,Klimatologi,Geofisika,BMKG, gempa,tsunami,berita gempa">
+		<meta name="author" content="Siagian">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/starter-template.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"/>
+	</head>
+	<body onload="digitized();">
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	  <a class="navbar-brand" href="#"><img id = 'logo' src = "css/img/bmkg.png">&nbsp;&nbsp;Badan Meteorologi Klimatologi dan Geofisika</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  
+		<ul class="navbar-nav ml-auto">
+		
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle nav-item active"" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+			  Layanan
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="gempa.html">Informasi Gempa Bumi</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="publik.html">Informasi Cuaca Publik</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="penerbangan.html">Informasi Cuaca Bandara</a>
+			</div>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="https://www.bmkg.go.id">Home</a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="https://www.bmkg.go.id">Contact Us</a>
+		  </li>
+		  <li>
+		  <table class="tabBlock" align="left" cellspacing="0" cellpadding="0" border="0">
+				<tr><td class="clock" id="dc"></td>  <!-- THE DIGITAL CLOCK. -->
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						
+							<!-- HOUR IN 'AM' AND 'PM'. -->
+							<tr><td class="clocklg" id="dc_hour"></td></tr>
+
+							<!-- SHOWING SECONDS. -->
+							<tr><td class="clocklg" id="dc_second"></td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</li>
+		</ul>
+	  </div>
+	</nav>
+	
+	<main role="main" class="container-fluid">
+	
+	
+
+		<div class="starter-template">
+			<div class="row">
+				<div class="col-12">
+					<div  class="alert alert-dark" role="alert">
+					 <p align='left'> <h2> Peringatan Gempa Bumi dan Tsunami </h2> </p><br>
+					 
+					<div class="row">
+						<div class="col-sm">
+							<div align='left'class="alert alert-primary" role="alert">
+
+								<h4>Gempabumi Terkini</h4><hr>
+								<div class="card mb-3" style="max-width: 540px;">
+								  <div class="row no-gutters">
+									<div align='center' class="col-md-5">
+									
+										<div data-toggle="modal" data-target="#exampleModalCenter">
+
+											<img width ='500px' src="css/img/gempa_terkini.jpg" class="card-img" alt="shake map"><br><br>
+										</div>	
+										<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										  <div class="modal-dialog modal-dialog-centered" role="document">
+											<div class="modal-content">
+											  <div class="modal-header">
+												<h5 class="modal-title" id="exampleModalCenterTitle">Shake Map</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												  <span aria-hidden="true">&times;</span>
+												</button>
+											  </div>
+											  <div class="modal-body">
+												<img width ='500px' src="css/img/gempa_terkini.jpg">
+											  </div>
+											  <div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												
+											  </div>
+											</div>
+										  </div>
+										</div>	
+									 <a class="btn btn-warning" href="https://www.bmkg.go.id/gempabumi/gempabumi-dirasakan.bmkg" role="button">Selengkapnya</a>
+
+
+									</div>
+									<div class="col-md-7">
+									  <div class="card-body">
+										<h5 class="card-title">08 November 2019 <br>20:53 WIB</h5>
+										<p class="card-text"><img  width = '30px'src = "css/img/getaran.png">Magnitudo 2.7<br>
+										<img  width = '30px'src = "css/img/lokasi.png">Lokasi 3.34 LS - 128.41 BT<br>
+										<img  width = '30px'src = "css/img/kedalaman.png">Kedalaman 11 km<br>
+										<img  width = '27px'src = "css/img/pusat.png">Pusat gempa di darat ( 6 km Timur Kairatu)<br>
+										<img  width = '25px'src = "css/img/skala.png">Dirasakan (Skala MMI): II-III Kairatu<br>
+										<img  width = '30px'src = "css/img/peringatan.png">Tidak Berpotensi Tsunami<br></p><br>
+										<p class="card-text"><small class="text-muted">Terakhir update 10 menit lalu</small></p>
+									  </div>
+									</div>
+								  </div><br><br>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div class="alert alert-success" role="alert">
+  
+								<h4>Gempabumi dirasakan</h4><hr>
+								<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+								  <div class="carousel-inner">
+									<div class="carousel-item active">
+										<table class="table table-borderless">
+												<thead>
+													<tr class="table-active">
+														<th scope="col">#</th>
+														<th scope="col">Waktu</th>
+														<th scope="col">Lat-Lon</th>
+														<th scope="col">Magnitudo</th>
+														<th scope="col">Kedalaman</th>
+														<th scope="col">Skala MMI</th>
+
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="table-default">
+														<th scope="row">1</th>
+														<td>08/11/2019<br>
+															20:53:41 WIB</td>
+														<td>3.34 LS<br>
+															128.41 BT</td>
+														<td>2.7</td>
+														<td>11 km</td>
+														<td>II-III Kairatu</td>
+
+													</tr>
+													<tr class="table-success">
+														<th scope="row">2</th>
+														<td>08/11/2019<br>
+															13:32:21 WIB</td>
+														<td>2.85 LS<br>
+															119.47 BT</td>
+														<td>3.6</td>
+														<td>8 km</td>
+														<td>III Mamasa</td>
+
+													</tr>
+																
+													<tr class="table-default">
+														<th scope="row">3</th>
+														<td>07/11/2019<br>
+															21:27:14 WIB</td>
+														<td>8.23 LS<br>
+															111.13 BT</td>
+														<td>3.1</td>
+														<td>11 km</td>
+														<td>III Pacitan</td>
+													</tr>
+													
+													</tbody>
+											</table>
+									</div>
+									<div class="carousel-item">
+									  <table class="table table-borderless">
+												<thead>
+													<tr class="table-active">
+														<th scope="col">#</th>
+														<th scope="col">Waktu</th>
+														<th scope="col">Lat-Lon</th>
+														<th scope="col">Magnitudo</th>
+														<th scope="col">Kedalaman</th>
+														<th scope="col">Skala MMI</th>
+
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="table-default">
+														<th scope="row">4</th>
+														<td>07/11/2019<br>
+															11:35:35 WIB</td>
+														<td>2.01 LS<br>
+															126.45 BT</td>
+														<td>4.8</td>
+														<td>10 km</td>
+														<td>II Manado, II Bitung</td>
+
+													</tr>
+													<tr class="table-success">
+														<th scope="row">5</th>
+														<td>07/11/2019<br>
+															04:20:24 WIB</td>
+														<td>2.7 LS<br>
+															119.39 BT</td>
+														<td>2.9</td>
+														<td>10 km</td>
+														<td>II Mamasa</td>
+
+													</tr>
+																
+													<tr class="table-default">
+														<th scope="row">6</th>
+														<td>06/11/2019<br>
+															23:05:13 WIB</td>
+														<td>6.07 LS<br>
+															104.29 BT</td>
+														<td>4.3</td>
+														<td>19 km</td>
+														<td>I-II Liwa</td>
+													</tr>
+													
+													</tbody>
+											</table>
+									</div>
+									<div class="carousel-item">
+									  <table class="table table-borderless">
+												<thead>
+													<tr class="table-active">
+														<th scope="col">#</th>
+														<th scope="col">Waktu</th>
+														<th scope="col">Lat-Lon</th>
+														<th scope="col">Magnitudo</th>
+														<th scope="col">Kedalaman</th>
+														<th scope="col">Skala MMI</th>
+
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="table-default">
+														<th scope="row">7</th>
+														<td>06/11/2019<br>
+															18:05:49 WIB</td>
+														<td>2.36 LS<br>
+															120.97 BT</td>
+														<td>3.6</td>
+														<td>5 km</td>
+														<td>II-III Malili</td>
+
+													</tr>
+													<tr class="table-success">
+														<th scope="row">8</th>
+														<td>06/11/2019<br>
+															15:02:01 WIB</td>
+														<td>1.19 LS<br>
+															127.68 BT</td>
+														<td>2.6</td>
+														<td>10 km</td>
+														<td>II Labuha</td>
+
+													</tr>
+																
+													<tr class="table-default">
+														<th scope="row">9</th>
+														<td>06/11/2019<br>
+															10:48:50 WIB</td>
+														<td>0.74 LS<br>
+															127 BT</td>
+														<td>3.4</td>
+														<td>10 km</td>
+														<td>II Labuha</td>
+													</tr>
+													
+													</tbody>
+											</table>
+									</div>
+								  </div>
+								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								  </a>
+								  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								  </a>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-sm">
+							<div align = 'right' class="alert alert-danger" role="alert">
+  
+								<h4>Informasi Gempabumi</h4><hr>
+								
+								<div class="card mb-3" style="max-width: 540px;">
+									<div class="row no-gutters">
+											<div class="col-md-4"><br>
+												<img src="css/img/gempa_ambon.jpg" class="card-img" alt="...">
+											</div>
+											<div class="col-md-8">
+												<div class="card-body">
+													<a href="https://www.bmkg.go.id/berita/?p=gempabumi-tektonik-m-52-mengguncang-kota-ambon-tidak-berpotensi-tsunami&lang=ID&s=detil"><p class="card-text">Gempabumi Tektonik M 5,2 Mengguncang Kota Ambon, Tidak Berpotensi Tsunami.</p></a>
+													<p class="card-text"><small class="text-muted">10 Oktober 2019</small></p>
+												</div>
+											</div>
+									</div>
+								</div>
+								<div class="w-100">
+								<div class="card mb-3" style="max-width: 540px;">
+									<div class="row no-gutters">
+											<div class="col-md-4"><br>
+												<img src="css/img/gempa_ambon1.jpeg" class="card-img" alt="...">
+											</div>
+											<div class="col-md-8">
+												<div class="card-body">
+													<a href="https://www.bmkg.go.id/berita/?p=ulasan-guncangan-tanah-akibat-gempabumi-di-ambon-maluku-26-september-2019&lang=ID&s=detil"><p class="card-text">Ulasan Guncangan Tanah Akibat Gempabumi Di Ambon Maluku 26 September 2019</p></a>
+													<p class="card-text"><small class="text-muted">27 September 2019</small></p>
+												</div>
+											</div>
+									</div>
+								</div>
+								<div class="card mb-3" style="max-width: 540px;">
+									<div class="row no-gutters">
+											<div class="col-md-4"><br>
+												<img src="css/img/gempa_ambon3.jpg" class="card-img" alt="...">
+											</div>
+											<div class="col-md-8">
+												<div class="card-body">
+													<a href="https://www.bmkg.go.id/berita/?p=gempabumi-tektonik-m-68-mengguncang-kota-ambon-tidak-berpotensi-tsunami&lang=ID&s=detil"><p class="card-text">Gempabumi Tektonik M 6,8 Mengguncang Kota Ambon, Tidak Berpotensi Tsunami</p></a>
+													<p class="card-text"><small class="text-muted">26 September 2019</small></p>
+												</div>
+											</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					  </div>
+					</div>	
+
+					
+					
+				</div>
+			</div>
+
+			
+		
+		</div>
+		
+	</main>
+	
+	<div id="footer">
+	<p align='center'> &copy; 2019 - Simon Siagian</p></div>
+	</div>
+	
+	
+	
+	
+</body>
+		<script>
+			// OUR FUNCTION WHICH IS EXECUTED ON LOAD OF THE PAGE.
+			function digitized() {
+				var dt = new Date();    // DATE() CONSTRUCTOR FOR CURRENT SYSTEM DATE AND TIME.
+				var hrs = dt.getHours();
+				var min = dt.getMinutes();
+				var sec = dt.getSeconds();
+
+				min = Ticking(min);
+				sec = Ticking(sec);
+
+				document.getElementById('dc').innerHTML = hrs + ":" + min;
+				document.getElementById('dc_second').innerHTML = sec;
+
+				if (hrs > 12) { 
+					document.getElementById('dc_hour').innerHTML = 'PM'; 
+				}
+				else { 
+					document.getElementById('dc_hour').innerHTML = 'AM'; 
+				}
+
+				// CALL THE FUNCTION EVERY 1 SECOND (RECURSION).
+				var time
+				time = setInterval('digitized()', 1000);
+			}
+
+			function Ticking(ticVal) {
+				if (ticVal < 10) {
+					ticVal = "0" + ticVal;
+				}
+				return ticVal;
+			}
+		</script>
+</html>
